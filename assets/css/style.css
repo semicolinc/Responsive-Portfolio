@@ -1,0 +1,220 @@
+/* All note: I wanted to use my own font-family, not the recommended. */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: url(../images/email-pattern.png);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    transition: top 0.3s;
+    border-style: none solid solid solid;
+    border-width: 2px;
+    border-color: #cccccc;
+}
+
+.name {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    float: left;
+    font-size: 30px;
+    line-height: 90px;
+    margin: 10px 0 0 40px;
+    padding: 0 20px 0 20px;
+}
+
+ul li {
+    list-style: none;
+    float: right;
+    line-height: 100px;
+}
+ul li a {
+    display: block;
+    font-size: 18px;
+    color: #777777;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.74);
+    background-color: #4aaaa5;
+}
+
+a:active {
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+
+main {
+    background-color: #ffffff;
+    display: flex;
+    width: 960px;
+    height: 600px;
+    margin: 25px auto 85px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+}
+
+.footer {
+    background-color: #666666;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+#inside_footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 100px;
+}
+
+.topic {
+    color: #4aaaa5;
+    line-height: 50px;
+    font-size: 30px;
+    margin: 30px 0 -200px 30px;
+    display: flex;
+    flex-basis: 100%;
+}
+
+.line {
+    display: flex;
+    flex-basis: 100%;
+    height: 1px;
+    border-color: #ffffff;
+    margin: 50px 30px 0 30px;
+}
+
+.container {
+    display: flex;
+    flex-basis: 100%;
+}
+
+/* Index specific */
+
+#Profile_pic {
+    display: flex;
+    margin: 0px 30px 0 30px;
+}
+
+#specialPara {
+    display: flex;
+    font-size: 20px;
+    margin: 0 15px 0 15px;
+    line-height: 30px;
+    flex-basis: 100%;
+}
+
+/* Contact specific */
+
+input[type = text], select, textarea {
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    padding: 18px 0px 18px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+
+}
+
+label {
+
+    display: flex;
+    flex-basis: 25%;
+    padding: 12px 12px 12px 30px;
+
+}
+
+input[type=submit] {
+    
+    background-color:#4aaaa5;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 20px 0 0 400px;
+
+}
+
+.col_1 {
+
+    display: flex;
+    flex-basis: 25%;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+
+}
+
+.col_2 {
+
+    display: flex;
+    flex-basis: 75%;
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+
+}
+
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.row {
+
+    display: flex;
+    flex-basis: 100%;
+    
+}
+
+/* Porfolio specific */
+
+.container_image {
+
+    margin: 15px;
+    float: left;
+    width: 30%;
+    height: auto;
+
+}
+/*
+.absolute {
+
+    width: inherit;
+    height: 50px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    top: -20px;
+    z-index: 1;
+    right: 20px;
+    position: absolute;
+
+}
+
+This didn't work.
+
+*/
